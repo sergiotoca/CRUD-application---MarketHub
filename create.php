@@ -64,7 +64,9 @@
 
     </head>
     <body>
-
+        <header>
+            <?php include_once("nav-bar.php")?>
+        </header>
         <h1>New Product</h1>
 
         <!-- Display the new product form -->
@@ -91,5 +93,6 @@
             </div>
 
         </form>
+        <?php include_once("footer.php"); ?>
     </body> 
 </html>

@@ -10,6 +10,9 @@
 
     </head>
     <body>
+        <header>
+            <?php include_once("nav-bar.php"); ?> 
+        </header>
 
         <h1>Sign-up</h1>
 
@@ -36,7 +39,8 @@
             </div>
 
         </form>
-
+        
 
     </body>
+    <?php include_once("footer.php"); ?> 
 </html>

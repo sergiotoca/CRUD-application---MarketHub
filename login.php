@@ -47,6 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 
     </head>
+    <header>
+        <?php include_once("nav-bar.php");?>
+    </header>
     <body>
 
         <h1>Login</h1>
@@ -72,5 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
             </div>
 
         </form>
-    </body> 
+    </body>
+    <?php include_once("footer.php"); ?> 
 </html>

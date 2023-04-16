@@ -38,34 +38,7 @@ if(isset($_SESSION["user_id"]))  {
     </style>
     <!-- Display the nav bar -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.php">MarketHub</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <?php if(isset($user)): ?>
-                        <li class="nav-item">
-                        <a class="nav-link" href="create.php">New Product</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Log Out</a>
-                        </li>
-                    <?php else: ?>
-                        <li class="nav-item">
-                        <a class="nav-link" href="login.php">Log In</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
-                        </li>
-                    <?php endif; ?>
-                </ul>
-                </div>
-            </nav>
+            <?php include_once("nav-bar.php")?>
         </header>
 
         <!-- Display a greeting message if the user is logged in -->
@@ -220,20 +193,8 @@ if(isset($_SESSION["user_id"]))  {
         <?php endif; ?>
 
         <!-- Display the footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                    <h5>MarketHub</h5>
-                    <p>All Rights Reserverd</p>
-                </div>
-                <div class="col-md-6">
-                    <h5>Contact Us</h5>
-                    <p><a href="mailto:sergiop@toledo.com.br">Email</a></p>
-                </div>
-                </div>
-            </div>
-        </footer>            
+        <?php include_once("footer.php");?>
+                    
     </body>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
